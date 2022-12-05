@@ -1,0 +1,8 @@
+foreign-tenant-id = "52u0geit2yhghi..."
+foreign-client_password = "somethingSecureGoesHere"
+foreign-client_user_principal_name = "foreign-client"
+foreign-owner_password = "somethingSecureGoesHere"
+foreign-owner_user_principal_name = "foreign-owner"
+home-tenant-id = "523gg8vsiiwgeh8igh..."
+home-password = "somethingSecureGoesHere"
+home-user_principal_name = "home"

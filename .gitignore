@@ -1,0 +1,9 @@
+# Local .terraform directories
+**/.terraform/*
+
+*.swp
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+joshua.tfvars
