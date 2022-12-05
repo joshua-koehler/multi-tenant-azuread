@@ -2,8 +2,8 @@
 
 ## Terraform Infrastructure to set up:
 * App Registration in home tenant defining custom:
-** App Role
-** Scopes
+  *  App Role
+  * Scopes
 * Service Principal in home tenant
 * Service Principal in foreign tenant
 * User Principal in home tenant
