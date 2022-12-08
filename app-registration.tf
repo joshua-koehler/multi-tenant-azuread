@@ -1,8 +1,8 @@
 # Registered in Home tenant
 resource "azuread_application" "this" {
   provider = azuread.home
-  display_name     = var.app-name
-  owners           = [data.azuread_client_config.current.object_id] # Home tenant
+  display_name     = var.app-name 
+  owners = [azuread_user.home-owner.object_id]
   sign_in_audience = "AzureADMultipleOrgs" # App is a multi-tenant App Registration
   identifier_uris  = ["api://${var.app-name}"]
   fallback_public_client_enabled = true # ROPC flow defaults to public client (not confidential client)

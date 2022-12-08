@@ -6,4 +6,6 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.terraform*
+
 joshua.tfvars

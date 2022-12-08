@@ -38,4 +38,3 @@ resource "azuread_app_role_assignment" "foreign" {
   principal_object_id = azuread_user.foreign-client.object_id
   resource_object_id  = azuread_service_principal.foreign.object_id
 }
-

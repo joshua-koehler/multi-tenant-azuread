@@ -30,7 +30,24 @@ variable "home-password" {
 	type= string
 	nullable = false
 }
-variable "home-user_principal_name" {
+variable "home-client-user_principal_name" {
 	type= string
 	nullable = false
+}
+variable "home-owner-user_principal_name" {
+	type= string
+	nullable = false
+}
+variable "vm-location" {
+	type= string
+	nullable = false
+}
+variable "vm-size" {
+	type= string
+	nullable = false
+}
+variable "ssh-username" {
+	type= string
+	nullable = false
+	default = "adminuser"
 }
