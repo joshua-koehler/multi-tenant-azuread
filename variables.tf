@@ -26,15 +26,19 @@ variable "home-tenant-id" {
 	type= string
 	nullable = false
 }
-variable "home-password" {
-	type= string
-	nullable = false
-}
 variable "home-client-user_principal_name" {
 	type= string
 	nullable = false
 }
+variable "home-client-password" {
+	type= string
+	nullable = false
+}
 variable "home-owner-user_principal_name" {
+	type= string
+	nullable = false
+}
+variable "home-owner-password" {
 	type= string
 	nullable = false
 }
