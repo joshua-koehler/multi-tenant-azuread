@@ -4,6 +4,22 @@ provider "azuread" {
   tenant_id = var.home-tenant-id
 }
 
+/* Groups portion - we assign roles to groups and users to those groups - Requires AAD premium license
+// Alternative to assigning role directly to home-client
+ resource "azuread_group" "read-group" {
+   display_name     = "Read"
+   owners           = [data.azuread_client_config.current.object_id]
+   security_enabled = true
+   assignable_to_role = true
+   members = [azuread_user.home-client.object_id]
+ }
+ resource "azuread_app_role_assignment" "read-group" {
+   app_role_id         = azuread_service_principal.home.app_role_ids["Read"]
+   principal_object_id = azuread_group.read-group.object_id
+   resource_object_id  = azuread_service_principal.home.object_id
+ }
+ End Groups Portion */
+
 # Create this to test ROPC flow in home tenant
 resource "azuread_user" "home-client" {
   provider = azuread.home
